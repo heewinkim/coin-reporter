@@ -1,0 +1,213 @@
+알겠습니다. 금융 전문가들이 사용하는 수준의 고품질 비트코인 분석 리포트 HTML을 생성하겠습니다. Bloomberg Terminal이나 TradingView와 같은 전문 금융 툴의 느낌을 살리면서, 데이터 시각화를 위한 창의적인 레이아웃과 AI 분석 내용의 명확한 구조화에 중점을 두겠습니다. 완성도 높은 HTML 문서를 제공하도록 하겠습니다.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Market Analysis</title>
+  <style>
+    /* 전체 스타일 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* 헤더 스타일 */
+    header {
+      background-color: #1c2331;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .aws-badge {
+      background-color: #ff9900;
+      color: #1c2331;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .timestamp {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* 시장 요약 스타일 */
+    .market-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .market-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .market-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .market-card p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .market-card p.positive {
+      color: #4caf50;
+    }
+
+    .market-card p.negative {
+      color: #f44336;
+    }
+
+    /* 차트 섹션 스타일 */
+    .chart-section {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .chart-section h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .chart-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .chart-description {
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    /* 분석 결과 스타일 */
+    .analysis-section {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .analysis-section h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .analysis-item {
+      margin-bottom: 30px;
+    }
+
+    .analysis-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .analysis-item p {
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    /* 주요 포인트 하이라이트 */
+    .highlight-box {
+      background-color: #f5f5f5;
+      border-left: 5px solid #4caf50;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .highlight-box h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .highlight-box p {
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    /* 리스크 경고 섹션 */
+    .risk-section {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .risk-section h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .risk-section p {
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    /* 푸터 스타일 */
+    footer {
+      background-color: #1c2331;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-title">Bitcoin Market Analysis</div>
+    <div class="aws-badge">AWS Bedrock</div>
+    <div class="timestamp">2025-08-26 16:40:48</div>
+  </header>
+
+  <div class="market-summary">
+    <div class="market-card">
+      <h3>Current Price</h3>
+      <p class="positive">$110,362.98</p>
+    </div>
+    <div class="market-card">
+      <h3>Change</h3>
+      <p class="positive">+0.44% ($+483.42)</p>
+    </div>
+    <div class="market-card">
+      <h3>24h High</h3>
+      <p>$112,937.26</p>
+    </div>
+    <div class="market-card">
+      <h3>24h Low</h3>
+      <p>$108,666.66</p>
+    </div>
+  </div>
+
+  <div class="chart-section">
+    <h2>Chart Pattern Analysis</h2>
+    <img src="data:image/png;base64,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

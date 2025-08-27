@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Analysis Report</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    /* Header Styles */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .header .badge {
+      background-color: #007bff;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .header .timestamp {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Market Summary Styles */
+    .market-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .market-summary-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .market-summary-card h3 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .market-summary-card p {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .market-summary-card .change {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .market-summary-card .change.positive {
+      color: green;
+    }
+
+    .market-summary-card .change.negative {
+      color: red;
+    }
+
+    /* Chart Section Styles */
+    .chart-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .chart-section img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .chart-section .chart-description {
+      flex: 1;
+      margin-left: 30px;
+    }
+
+    .chart-section .chart-description h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .chart-section .chart-description p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Analysis Results Styles */
+    .analysis-results {
+      margin-bottom: 40px;
+    }
+
+    .analysis-results h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .analysis-results .analysis-section {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .analysis-results .analysis-section h3 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .analysis-results .analysis-section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Highlights Box Styles */
+    .highlights-box {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    .highlights-box h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .highlights-box ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .highlights-box li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* Risk Warning Styles */
+    .risk-warning {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    .risk-warning h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .risk-warning p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Footer Styles */
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 20px 0;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>Bitcoin Analysis Report</h1>
+        <span class="badge">AWS Bedrock</span>
+      </div>
+      <div class="timestamp">2025-08-26 16:42:56</div>
+    </div>
+
+    <div class="market-summary">
+      <div class="market-summary-card">
+        <h3>Current Price</h3>
+        <p>$110,300.01</p>
+        <div class="change positive">+0.38% ($+420.45)</div>
+      </div>
+      <div class="market-summary-card">
+        <h3>24H High</h3>
+        <p>$112,937.26</p>
+      </div>
+      <div class="market-summary-card">
+        <h3>24H Low</h3>
+        <p>$108,666.66</p>
+      </div>
+      <div class="market-summary-card">
+        <h3>Trend</h3>
+        <p>Bearish</p>
+      </div>
+    </div>
+
+    <div class="chart-section">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACCIAAASiCAYAAABqe9pMAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjcuMiwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8pXeV/AAAACXBIWXMAABcSAAAXEgFnn9JSAAEAAElEQVR4nOzdB5hcVfkH4C8hBUInhBI6UXonBEgILSBVeuhILyp/6QoqVVAUpCggCAhSldCkCAKhhVBC6B2kCYQSINSQnv9zzmY2s7uzye5mtszu+z7PfebuzNyZO3fu3Jm953e+06l379WmBgAAAAAAAACAMnQux4MAAAAAAAAAAICSAA0AAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAAKBtBBAAAAAAAAACgbAQRAAAAAAAAAICyEUQAAAAAAAAAAMpGEAEAAAAAAAAA
